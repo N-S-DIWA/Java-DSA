@@ -1,0 +1,29 @@
+//// LINEAR SEARCH ON INTEGER VALUES WHERE WE RETURN THE INDEX POSITION OF THE TARGET VALUE.
+//
+//   1.
+//
+//public class Main {
+//    public static void main(String[] args){
+//
+//        int[] arr = {45,17,23,50,99,1,2,7,33};
+//        int target = 33;
+//        int ans = linearSearch(arr,target);
+//        System.out.println("Index position of " + target + " is " + ans);
+//
+//    }
+//    static int linearSearch(int[] arr, int target){
+//        if(arr.length == 0){
+//            return -1;
+//        }
+//        for(int index = 0; index < arr.length; index++){
+//            int element = arr[index];
+//
+//            if(element == target){
+//                return index;
+//            }
+//        }
+////        This return statement states that if the target element is not found in the array return -1;
+//
+//        return -1;
+//    }
+//}
