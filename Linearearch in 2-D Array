@@ -1,0 +1,28 @@
+
+//// Linear Search in 2-D Array ->
+//
+//public class Main {
+//    public static void main(String[] args){
+//        int[][] arr = {
+//                {2, 4, 6},
+//                {3, 5, 7},
+//                {1, 8, 9},
+//        };
+//        int target = 8;
+//        int[] ans = linearSearch(arr,target);
+//        System.out.println("Index position of the target : " + "'" + target + "'" + " in the 2-d array is : " + Arrays.toString(ans));
+//
+////        Arrays.toString() is a built-in method in Java used to convert an array into a string representation,
+////        making it easier to print and view array contents.
+//    }
+//    static int[] linearSearch(int[][] arr,int target){
+//        for(int i=0; i<arr.length;i++){
+//            for(int j=0; j< arr[i].length;j++){
+//                if(arr[i][j] == target){
+//                    return new int[]{i,j};
+//                }
+//            }
+//        }
+//        return new int[]{-1,-1};
+//    }
+//}
