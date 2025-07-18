@@ -1,0 +1,55 @@
+
+//// Linear Search Algorithm to find the minimum value in an array ->
+//
+//public class Main {
+//    public static void main(String[] args){
+//
+//        int[] arr = {18,15,-3,4,23,37,-4};
+//        System.out.println(min(arr));
+//    }
+//
+//    static int min(int[] arr){
+//        if(arr.length == 0){
+//            return -1;
+//        }
+//        int minValue = arr[0];
+//
+//        for(int index = 0; index < arr.length ; index++){
+//
+//            if(arr[index] < minValue){
+//                minValue = arr[index];
+//            }
+//        }
+//        System.out.print("Smallest element present in given array: ");
+//        return  minValue;
+//    }
+//}
+
+// import java.util.Arrays;
+
+//// Linear Search Algorithm to find th Largest number in array ->
+//
+//public class Main {
+//    public static void main(String[] args){
+//
+//        int[] arr = {18,15,-3,4,23,37,-4};
+//        System.out.println(max(arr));
+//    }
+//
+//    static int max(int[] arr){
+//        if(arr.length == 0){
+//            return -1;
+//        }
+//        int maxValue = arr[0];
+//
+//        for(int index = 0; index < arr.length ; index++){
+//
+//            if(arr[index] > maxValue){
+//                maxValue = arr[index];
+//            }
+//        }
+//        System.out.print("Smallest element present in given array: ");
+//        return  maxValue;
+//    }
+//}
+//
