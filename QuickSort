@@ -1,0 +1,71 @@
+//// Quick Sort ->
+//
+//import java.util.Arrays;
+//
+//public class Main{
+//    public static void main(String[] args){
+//
+//        int[] arr ={5, 4, 3, 2, 1};
+//
+//        quickSort(arr,0,arr.length-1);
+//        System.out.println(Arrays.toString(arr));
+//
+//    }
+//
+//    static void quickSort(int[] arr,int low, int high){
+//
+////        Base case of recursion. If the sub-array has 1 or 0 elements, it's already sorted, so return.
+//
+//        if( low >= high){
+//            return;
+//        }
+//
+////         Initialize two pointers: start and end, to traverse the sub-array.
+//
+//        int start = low;
+//        int end = high;
+//
+////      Calculate the middle index of the current sub-array. This is to choose a pivot element.
+//
+//        int mid = start  + ( end - start ) / 2;
+//
+////         Select the pivot value. The idea is to partition the array around this pivot.
+//
+//        int pivot = arr[mid];
+//
+//
+////        The main loop to partition the array into two parts ->
+////            Elements less than pivot go to the left.
+////            Elements greater than pivot go to the right.
+//
+//        while( start<= end){
+//
+////             Move the start pointer forward as long as elements are smaller than the pivot.
+//            while( arr[start] < pivot){
+//                start++;
+//            }
+////            Move the end pointer backward as long as elements are greater than the pivot.
+//            while( arr[end] > pivot){
+//                end--;
+//
+//            }
+//
+////      If the pointers haven't crossed, it means elements are on the wrong side of the pivot and need to be swapped.
+//            if( start <= end ){
+//
+//                int temp = arr[start];
+//                arr[start] = arr[end];
+//                arr[end] = temp;
+//
+////                Move the pointers after the swap to continue partitioning.
+//                start++;
+//                end--;
+//            }
+//        }
+//
+////         Pivot is at correct position, sort the array.
+//
+//        quickSort(arr,low,end);    // Recursive call to sort the left sub-array
+//        quickSort(arr,start,high);  // Recursive call to sort the right sub-array
+//    }
+//}
