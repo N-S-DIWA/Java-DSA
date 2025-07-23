@@ -1,0 +1,114 @@
+
+//// Dynamic Stack in java ->
+//
+//class Stack{
+//
+//    private int[] arr;
+//    private int top;
+//    private int capacity;
+//
+//    public Stack(int size){
+//
+//        capacity = size;
+//        arr = new int[capacity];
+//        top = -1;
+//    }
+//
+////    Push operation ->
+//
+//    public void push(int data){
+//
+//        if(top == capacity - 1){
+//            System.out.println("Stack Overflow");
+//        }
+//        else{
+//            top++;
+//            arr[top] = data;
+//        }
+//    }
+//
+////    isEmpty operation ->
+//
+//    private boolean isEmpty() {
+//        return top == -1;
+//    }
+//
+////    isFull operation ->
+//
+//    public boolean isFull() {
+//        return top == capacity - 1;
+//    }
+//
+//    public String StackUnderflow(){
+//        return "Stack Underflow";
+//    }
+//
+//    public String StackOverflow(){
+//        return "Stack Overflow";
+//    }
+//
+////    Pop Operation ->
+//
+//    public int pop(){
+//
+//        if(isEmpty()){
+//            System.out.println(StackUnderflow());
+//            return -1;
+//        }
+//        return arr[top--];
+//    }
+//
+////    Peek Operation ->
+//
+//    public int peek(){
+//
+//        if(isEmpty()){
+//            System.out.println("Stack is Empty\n");
+//            return -1;
+//        }
+//        return arr[top];
+//    }
+//
+//    public int size(){
+//
+//        return top + 1;
+//    }
+//
+////    Display Operation ->
+//
+//    public void display(){
+//        if(isEmpty()){
+//            System.out.println(StackUnderflow());
+//        }
+//        else{
+//            for(int i = 0; i <= top; i++){
+//                System.out.print(arr[i] + " ");
+//            }
+//        }
+//    }
+//}
+//public class Main{
+//    public static void main(String[] args){
+//
+//        Stack obj = new Stack(3);
+//        obj.push(20);
+//        obj.push(30);
+//        obj.push(40);
+////        obj.push(50);
+//
+//        System.out.println("* Stack Push : ");
+//        obj.display();
+//
+//        obj.pop();
+//        System.out.println("\n\n* Stack Pop : ");
+//        obj.display();
+//
+//        System.out.println("\n\n* Stack Peek : ");
+//        int peekValue = obj.peek();
+//        System.out.println(peekValue);
+//
+//        System.out.println("\n*Stack Size after pop : ");
+//        int size2 = obj.size();
+//        System.out.println(size2);
+//    }
+//}
