@@ -1,0 +1,41 @@
+//// PRE-ORDER TRAVERSAL ->
+/// 
+// /// This means:
+
+//              1. Visit the current node (root)
+
+//              2. Traverse the left subtree
+
+//              3. Traverse the right subtree
+//
+//class TreeNode{
+//
+//    int val;
+//    TreeNode left;
+//    TreeNode right;
+//
+//    public TreeNode(int val){
+//        this.val = val;
+//    }
+//}
+//
+//public class Main{
+//    public static void main(String[] args) {
+//
+//        TreeNode root = new TreeNode(4);
+//        root.left = new TreeNode(2);
+//        root.left.left = new TreeNode(1);
+//        root.left.right = new TreeNode(3);
+//        root.right = new TreeNode(5);
+//
+//        System.out.println("* Pre-Order Traversal :");
+//        preOrderTraversal(root);
+//    }
+//    static void preOrderTraversal(TreeNode root){
+//        if(root == null) return;
+//
+//        System.out.print(root.val + " ");
+//        preOrderTraversal(root.left);
+//        preOrderTraversal(root.right);
+//    }
+//}
