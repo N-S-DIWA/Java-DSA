@@ -1,0 +1,40 @@
+
+//// IN-ORDER TRAVERSAL ->
+/// 
+// /// This means:
+
+//                  1. First, visit all the nodes in the left subtree
+
+//                  2. Then visit the current node (the root of the current subtree)
+
+//                  3. Finally, visit all the nodes in the right subtree
+//
+//class TreeNode{
+//
+//    int val;
+//    TreeNode left;
+//    TreeNode right;
+//
+//    public TreeNode(int val){
+//        this.val = val;
+//    }
+//}
+//
+//public class Main{
+//    public static void main(String[] args) {
+//
+//        TreeNode root = new TreeNode(1);
+//        root.right = new TreeNode(2);
+//        root.right.left = new TreeNode(3);
+//
+//          System.out.println("* In-order Traversal : ");
+//        inOrderTraversal(root);
+//    }
+//    static void inOrderTraversal(TreeNode root){
+//        if(root == null) return;
+//
+//        inOrderTraversal(root.left);
+//        System.out.print(root.val + " ");
+//        inOrderTraversal(root.right);
+//    }
+//}
