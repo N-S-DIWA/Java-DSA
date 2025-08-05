@@ -1,0 +1,156 @@
+
+//
+//// Binary Search Tree ->
+//
+//class TreeNode{
+//    int val;
+//    TreeNode left;
+//    TreeNode right;
+//
+//    public TreeNode(int val){
+//        this.val = val;
+//        left = right = null;
+//
+//    }
+//}
+//
+//class BinarySearchTree{
+//
+//    TreeNode root;
+//
+////     INSERT A NODE METHOD IN BST ->
+//    public TreeNode insert(TreeNode root, int val){
+//
+//        if(root == null) return new TreeNode(val);
+//
+//        if(val < root.val){
+//            root.left = insert(root.left,val);
+//        }
+//        else if(val > root.val){
+//            root.right = insert(root.right,val);
+//        }
+//        return root;
+//    }
+//
+////     DELETE A NODE IN BST ->
+//    public TreeNode delete(TreeNode root, int key){
+//
+//        if(root == null) return null;
+//
+//        if(key < root.val){
+//            root.left = delete(root.left,key);
+//        }
+//        else if(key > root.val){
+//            root.right = delete(root.right,key);
+//        }
+//        else{
+//            if(root.left == null) return root.right;
+//            else if(root.right == null) return root.left;
+//
+//            // Node with two children: Get the inorder successor (smallest in the right subtree)
+//            root.val = minValue(root.right);
+//
+//            // Delete the inorder successor
+//            root.right = delete(root.right, root.val);
+//        }
+//        return root;
+//    }
+//
+//    public boolean search(TreeNode root, int key){
+//
+//        if(root == null)  return false;
+//        else if(root.val == key) return true;
+//        else if(key < root.val) return search(root.left, key);
+//        else return search(root.right,key);
+//    }
+//
+////    MINIMUM VALUE FINDING IN BST ->
+//    public int minValue(TreeNode root){
+//
+//        int min = root.val;
+//
+//        while(root.left!=null){
+//
+//            root = root.left;
+//            min = root.val;
+//        }
+//        return min;
+//    }
+////    MAXIMUM VALUE FINDING IN BST ->
+//    public int maxValue(TreeNode root){
+//
+//        int max = root.val;
+//
+//        while(root.right!=null){
+//
+//            root = root.right;
+//            max = root.val;
+//        }
+//        return max;
+//    }
+//
+////    INORDER TRAVERSAL ->
+//    public void inOrder(TreeNode root){
+//
+//        if(root!=null){
+//            inOrder(root.left);
+//            System.out.print(root.val + " ");
+//            inOrder(root.right);
+//        }
+//    }
+//
+////    PREORDER TRAVERSAL ->
+//    public void preOrder(TreeNode root){
+//
+//        if(root!=null){
+//            System.out.print(root.val + " ");
+//            preOrder(root.left);
+//            preOrder(root.right);
+//        }
+//    }
+//
+////    POSTORDER TRAVERSAL ->
+//    public void postOrder(TreeNode root){
+//
+//        if(root!=null){
+//            postOrder(root.left);
+//            postOrder(root.right);
+//            System.out.print(root.val + " ");
+//        }
+//    }
+//}
+//
+//public class Main{
+//    public static void main(String[] args) {
+//
+//        BinarySearchTree obj = new BinarySearchTree();
+//
+//        obj.root = obj.insert(obj.root, 50);
+//
+//        obj.insert(obj.root, 30);
+//        obj.insert(obj.root, 70);
+//        obj.insert(obj.root, 20);
+//        obj.insert(obj.root, 40);
+//        obj.insert(obj.root, 60);
+//        obj.insert(obj.root, 80);
+//
+//
+//        System.out.println("* In-Order Traversal : ");
+//        obj.inOrder(obj.root);
+//
+//        System.out.println("\n\n* Pre-Order Traversal : ");
+//        obj.preOrder(obj.root);
+//
+//        System.out.println("\n\n* Post-Order Traversal : ");
+//        obj.postOrder(obj.root);
+//
+//        System.out.println("\n\n* Search 60 : " + obj.search(obj.root,60));
+//
+//        obj.delete(obj.root,50);
+//        System.out.println("\n* Inorder Traversal after deletion of 50 : ");
+//        obj.inOrder(obj.root);
+//
+//        System.out.println("\n\n*Minimum Value of BST : " + obj.minValue(obj.root));
+//        System.out.println("\n*Maximum Value of BST : " + obj.maxValue(obj.root));
+//    }
+//}
