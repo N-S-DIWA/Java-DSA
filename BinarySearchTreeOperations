@@ -1,6 +1,4 @@
-
-//
-//// Binary Search Tree ->
+// Binary Search Tree ->
 //
 //class TreeNode{
 //    int val;
@@ -118,6 +116,18 @@
 //            System.out.print(root.val + " ");
 //        }
 //    }
+//
+////    TO FIND HEIGHT OG BST ->
+//
+//    public int height(TreeNode root){
+//
+//        if(root == null) return -1;
+//
+//        int leftHeight = height(root.left);
+//        int rightHeight = height(root.right);
+//
+//        return Math.max(leftHeight, rightHeight) + 1;
+//    }
 //}
 //
 //public class Main{
@@ -150,7 +160,9 @@
 //        System.out.println("\n* Inorder Traversal after deletion of 50 : ");
 //        obj.inOrder(obj.root);
 //
-//        System.out.println("\n\n*Minimum Value of BST : " + obj.minValue(obj.root));
-//        System.out.println("\n*Maximum Value of BST : " + obj.maxValue(obj.root));
+//        System.out.println("\n\n* Minimum Value of BST : " + obj.minValue(obj.root));
+//        System.out.println("\n* Maximum Value of BST : " + obj.maxValue(obj.root));
+//
+//        System.out.println("\n* Height of BST : " + obj.height(obj.root));
 //    }
 //}
